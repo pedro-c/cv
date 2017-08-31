@@ -1,0 +1,274 @@
+# Page settings
+
+baseurl = "https://pedro-c.github.io/cv/"
+languageCode = "en-us"
+title = "Pedro Costa"
+theme = "hugo-orbit-theme"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = false
+disable404 = false
+
+[params]
+
+# Meta
+    description = "Pedro Costa Resume and Blog"
+    author = "Pedro Costa"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-6.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Pedro Costa"
+        tagline = "Informatics and Computing Engineer Student @ FEUP"
+        avatar = "profile.jpg"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: pedrodc@protonmail.com"
+        title = "pedrodc@protonmail.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+351933469242"
+        title = "+351 933 469 242"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//keybase.io/pedroc"
+        title = "keybase"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/pedrodcosta"
+        title = "linkedin.com/in/pedrodcosta"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/pedro-c"
+        title = "github.com/pedro-c"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/pedrodc23"
+        title = "@pedrodc23"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Integrated Master in Informatics and Computing Engineering - BSc (3 years) + MSc (2 years)"
+        college = "Faculty of Engineering at University of Porto - FEUP"
+        dates = "2014 - 2019"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "Portuguese"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Professional"
+
+        [[params.language.list]]
+        language = "German"
+        level = "Begginer"
+
+
+    # certificates section
+    [params.certificates]
+        enable = true
+        icon = "fa-certificate"
+        title = "Certificates"
+
+        [[params.certificates.list]]
+        title = "Cambride ESOL Level 1 Certificate in ESOL Internationa"
+        details = "FCE - First Certificate in English @ University of Cambridge"
+
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Software Engineering"
+
+        [[params.interests.list]]
+        interest = "Distributed Systems"
+
+        [[params.interests.list]]
+        interest = "Swimming"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Courses attended at FEUP"
+        summary = "Mathematical Analysis | Algebra | Physics | Artificial Intelligence | Logic Programming | Database and Web Applications | Data structures | Algorithms design and analysis | Distributed Systems | Computer Networks | Graphical Interfaces"
+
+    # Jobs section
+    [params.jobs]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Professional Experience"
+
+        [[params.jobs.list]]
+        position = "Summer Internship"
+        dates = "2017"
+        company = "Bitmaker Software, Porto"
+        details = "Worked on the development of an employee benefit managment webapp for Sodexo, using the Phoenix framework with Elixir. Develop my skills with functional programming, web development and REST services."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-plus-square-o"
+        title = "Extra-curricular activities"
+
+        [[params.experiences.list]]
+        position = "Board of Regents"
+        dates = "2017 - 2019"
+        company = "FEUP, Porto"
+        details = ""
+
+        [[params.experiences.list]]
+        position = "Head of Entrepreneurship Department"
+        dates = "2017 - 2018"
+        company = "Student's Association, FEUP, Porto"
+        details = "Previous: Member of Recreational Department from 2014 to 2017"
+
+        [[params.experiences.list]]
+        position = "Treasurer of the Informatics Club"
+        dates = "2017 - 2018"
+        company = "NIAEFEUP, FEUP, Porto"
+        details = "Previous: Member from 2016 to 2017"
+
+        [[params.experiences.list]]
+        position = "Treasurer of ENEI 2018"
+        dates = "2017 - 2018"
+        company = "National Meeting of Informatic Students, Porto"
+        details = ""
+
+        [[params.experiences.list]]
+        position = "Alumni at European Youth Parliament"
+        dates = "2017 - 2018"
+        company = "EYP, Europe"
+        details = "International sessions: Tbilisi 2013 | Barcelona 2014"
+
+        [[params.experiences.list]]
+        position = "Desing Engineer"
+        dates = "2013 - 2014"
+        company = "F1 in Schools, Portugal"
+        details = "Participated in the regional and national finals."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Academic Projects"
+
+        [[params.projects.list]]
+        title = "Neural network for facial expression recognition"
+        url = "https://github.com/pedro-c/IART-FEUP"
+        tagline = "Webapp interface using ConvNetJS, a Javascript library, to train a neural network using backpropagation algorithms."
+
+        [[params.projects.list]]
+        title = "Web application for Project Management"
+        url = "https://github.com/pedro-c/FEUP-LBAW"
+        tagline = "Webapp for managing a team tasks, meetings and files. Using php, postgreSQL, smarty, sass and javascript."
+
+        [[params.projects.list]]
+        title = "Distributed Backup Service"
+        url = "https://github.com/pedro-c/FEUP-SDIS"
+        tagline = "Multi-threaded distributed backup service written in Java."
+
+        [[params.projects.list]]
+        title = "Pokemon Endeless Runner game for Minix"
+        url = "https://github.com/pedro-c/IART-FEUP"
+        tagline = "Written in  C and Assembly, which required a low level management and handling of system interruptions for several devices such as the mouse, keyboard, RTC and video ram. "
+
+        [[params.projects.list]]
+        title = "C++ Route Calculation System"
+        url = "https://github.com/pedro-c/CAL-FEUP-EasyPilot"
+        tagline = "A C++ Navigation System using graphs and Dijkstra’s algorithm."
+
+    # Programming Challenges section
+    [params.challenges]
+        enable = true
+        icon = "fa-code"
+        title = "Programming Challenges"
+
+        [[params.challenges.list]]
+        title = "Porto Summer of Code"
+        dates = "2016"
+        details = "Academic Match Results app, a mobile web app built with Ionic and Cordova."
+
+        [[params.challenges.list]]
+        title = "Barcelona imaginChallenge"
+        dates = "2016"
+        details = "A endless runner Android mobile game developed in 24 hours."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Distributed Systems"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Artificial Intelligence"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Web development"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Team work"
+        level = "95%"
+
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
