@@ -4,6 +4,7 @@ baseurl = "https://pedro-c.github.io/cv/"
 languageCode = "en-us"
 title = "Pedro Costa"
 theme = "hugo-orbit-theme"
+enableRobotsTXT = true
 
 # Do not build files for websites. Need them? Set to false
 disableRSS = true
@@ -98,7 +99,7 @@ disable404 = false
 
         [[params.language.list]]
         language = "German"
-        level = "Begginer"
+        level = "Beginner"
 
 
     # certificates section
